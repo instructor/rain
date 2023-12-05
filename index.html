@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAIN - ranking analytics</title>
+        <style>
+    .standard-picture {
+        width: 600px;
+        height: auto;
+        border: 1px solid #000;
+    }
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 150%;
+        background-color: oldlace;
+        margin-left: 20px;
+    }   
+      </style>
+  </head>
+  <body>
+    <h3>DBV Wettkampfbetrieb U19</h3>
+<p>Der DBV Wettkampfbetrieb U19 hat in der Nach-Coronazeit bundesweit und auch in vielen  Landesverbänden erfreulicherweise zugenommen. Abbildung 1 veranschaulicht diesen Trend.</p>
+
+<figure>
+<img src="timeline_nr-of-player-ids-dbv.png" alt="Alternativer Text" class="standard-picture" />
+<figcaption>Abb. 1: Anzahl Turnierspieler/innen U19 im DBV gesamt. Das sind Spieler/innen mit SpielerID, die in den Ranglistentabellen aufgeführt sind (unabhängig von den gespielten Disziplinen).</figcaption>
+</figure>
+
+<strong>Bemerkungen:</strong>
+<ul>
+    <li>Für jede Kalenderwoche (KW) ist die Summe aller Spieler(-IDs) veranschaulicht, die in der DBV-Ranglistentabelle in dieser jeweiligen KW geführt wird.
+    </li>
+    <li>Die Corona-"Plateaus" sind gut zu erkennen (z.B. KWs 11-26/2020). In diesen Zeiträumen war die RL-Tabelle "eingefroren", d.h. es kamen keine Turnierwertungen hinzu.
+    </li>
+    <li>Das "Anfahren" nach der Corona-Zeit ist am grossen Anstieg zu erkennen. In dieser Zeit fielen keine Turniere aus der Wertung. In KW 26/2022 beim "Auftauen" der RL-Tabelle fielen auf einen Schlag alle Turniere aus der Wertung, die mehr als 12 Monate zurücklagen.
+    </li>
+    <li>Jeweils in KW 1 fallen die letztjährigen U19-2 Jahrgänge aus der Wertung, da sie den Jugendbereich verlassen. Deshalb ist bei jedem Übergang KW 52 -> KW 1 ein Einschnitt zu sehen.
+    </li>
+    <li>Die analoge Grafik für Spieler(-IDs) im BWBV (s. Abb. 2) zeigt einen ähnlichen Verlauf, wobei in den letzten Wochen und Monaten der Anstieg etwas steiler ist. Das deckt sich mit der Erfahrung, dass in letzter Zeit die Meldezahlen zu Verbandsturnieren wieder ansteigen.
+    </li>
+</ul>      
+      
+<figure>
+<img src="timeline_nr-of-player-ids-bwbv.png" alt="Alternativer Text" class="standard-picture" />
+<figcaption>Abb. 2: Anzahl Turnierspieler/innen U19 im BWBV.</figcaption>
+</figure>
+
+<hr />
+Zum RAIN-Projekt (<span style="text-decoration: underline;">ra</span>nking <span style="text-decoration: underline;">in</span>sights):<br />
+Mit einer Eigenentwicklng in Python werden alle DBV Ranglistentabellen seit Bestehen des Jugendwettkampfsystems (JWS) in eine SQLite3-Datenbank importiert. Ebenfalls mittels Python Scripts werden Statistiken aus der DB erzeugt und visualisiert.
+<br />
+&copy; Edi Klein, 5. Dezember 2023 (jugendwart@bwbv.de) 
+
+  </body>
+</html>
