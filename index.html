@@ -6,9 +6,13 @@
     <title>RAIN - ranking analytics</title>
         <style>
     .standard-picture {
-        width: 600px;
+        width: 100%;
+        max-width: 600px;
         height: auto;
         border: 1px solid #000;
+    }
+    figcaption {
+        font-size: 80%;            
     }
     body {
         font-family: Arial, Helvetica, sans-serif;
@@ -19,12 +23,12 @@
       </style>
   </head>
   <body>
-    <h3>DBV Wettkampfbetrieb U19</h3>
+    <h3>Zahlen und Fakten zur DBV Ranglistentabelle U19</h3>
 <p>Der DBV Wettkampfbetrieb U19 hat in der Nach-Coronazeit bundesweit und auch in vielen  Landesverbänden erfreulicherweise zugenommen. Abbildung 1 veranschaulicht diesen Trend.</p>
 
 <figure>
 <img src="timeline_nr-of-player-ids-dbv.png" alt="Alternativer Text" class="standard-picture" />
-<figcaption>Abb. 1: Anzahl Turnierspieler/innen U19 im DBV gesamt. Das sind Spieler/innen mit SpielerID, die in den Ranglistentabellen aufgeführt sind (unabhängig von den gespielten Disziplinen).</figcaption>
+<figcaption>Abb. 1: Anzahl Turnierspieler/innen U19 im DBV gesamt. Das sind Spieler/innen mit SpielerID, die in den Ranglistentabellen aufgeführt sind (unabhängig von den gespielten Disziplinen). Mit JWS wird das Jugendwettkampfsystem bezeichnet, das seit 1.1.2020 im DBV U19 Turnierbetrieb eingeführt ist.</figcaption>
 </figure>
 
 <strong>Bemerkungen:</strong>
@@ -47,9 +51,12 @@
 </figure>
 
 <hr />
-Zum RAIN-Projekt (<span style="text-decoration: underline;">ra</span>nking <span style="text-decoration: underline;">in</span>sights):<br />
-Mit einer Eigenentwicklng in Python werden alle DBV Ranglistentabellen seit Bestehen des Jugendwettkampfsystems (JWS) in eine SQLite3-Datenbank importiert. Ebenfalls mittels Python Scripts werden Statistiken aus der DB erzeugt und visualisiert.
-<br />
+<strong>Zum RAIN-Projekt (<span style="text-decoration: underline;">ra</span>nking <span style="text-decoration: underline;">in</span>sights):</strong>
+<p />
+Mit einer Eigenentwicklung in Python werden alle DBV Ranglistentabellen seit 1.1.2020, also dem Bestehen des Jugendwettkampfsystems (JWS) in eine SQLite3-Datenbank importiert. Die Datensätze enthalten Spielerinformationen, deren Vereine/Bezirke/BLVs/Gruppen, und sind nach Disziplinen getrennt. Mittels Python Scripts werden daraus Statistiken aus der DB erzeugt und visualisiert.
+<p />
+Geplant sind weitere Auswertungen, z.B. Anzahl aktiver Spieler/BLV im Zeitverlauf. Später auch Import von Turnierergebnissen und Aussagen über die Güte der RL-Tabelle (direkter Vergleich 2 Gegner, Qualität der Setzlisten etc.)
+<p />
 &copy; Edi Klein, 5. Dezember 2023 (jugendwart@bwbv.de) 
 
   </body>
