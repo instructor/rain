@@ -1,8 +1,11 @@
 # Das "rain" Projekt (ranking insights)
+
 Basierend auf umfangreichen Datenbeständen werden mittels Analytics(*) Zusammenhänge und Erkenntnisse über die DBV Ranglistentabellen U19 veranschaulicht.
 
-(*) Analytics ist die systematische computergestützte Analyse von Daten oder Statistiken und dient der Entdeckung, Interpretation und Kommunikation von aussagekräftigen Mustern in Daten. Sie beinhaltet auch die Anwendung von Datenmustern für eine effektive Entscheidungsfindung [1].
+Mit einer Eigenentwicklung in Python werden alle DBV Ranglistentabellen seit 1.1.2020, also dem Bestehen des Jugendwettkampfsystems (JWS) in eine SQLite3-Datenbank importiert. Die Datensätze enthalten Spielerinformationen, deren Vereine/Bezirke/BLVs/Gruppen, und sind nach Disziplinen getrennt. Mittels Python Scripts werden daraus Statistiken aus der DB erzeugt und visualisiert.
 
-[1]: https://en.wikipedia.org/wiki/Analytics (Abruf: 5 Dez. 2023)
+Geplant sind weitere Auswertungen, z.B. Anzahl aktiver Spieler/BLV im Zeitverlauf. Später auch Import von Turnierergebnissen und Aussagen über die Güte der RL-Tabelle (direkter Vergleich 2 Gegner, Qualität der Setzlisten etc.)
 
-  Ein umfangreicher Datenbestand ermöglicht reichhaltige Erkenntnisse. Analytics beruht auf der gleichzeitigen Anwendung von Statistik, Computerprogrammierung und Operations Research.
+---
+
+(*) Analytics ist die systematische computergestützte Analyse von Daten oder Statistiken und dient der Entdeckung, Interpretation und Kommunikation von aussagekräftigen Mustern in Daten. (https://en.wikipedia.org/wiki/Analytics , Abruf: 5 Dez. 2023).
