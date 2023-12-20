@@ -51,7 +51,7 @@
 </figure>
 
 <p>
-Die Anzahl aktiver Turnierspieler für eine konkrete Kalenderwoche ist in Abbildung 3 visualisiert. "Aktiv" bedeutet, dass die gezählten Spieler/innen in den letzten 12 Monaten an mindestens 1 Turnier teilgenommen haben. In allen BLVs gibt es wesentlich mehr U19-Spieler/innen mit einer SpielerID, d.h. nur ein Teil davon nimmt an Wettkämpfen statt.
+Die Anzahl aktiver Turnierspieler für eine konkrete Kalenderwoche ist in Abbildung 3 visualisiert. "Aktiv" bedeutet, dass die gezählten Spieler/innen in den letzten 12 Monaten an mindestens 1 Turnier teilgenommen haben. In allen BLVs gibt es wesentlich mehr U19-Spieler/innen mit einer SpielerID, d.h. nur ein Teil davon nimmt an Wettkämpfen teil.
 </p>
 
 <figure>
@@ -59,15 +59,33 @@ Die Anzahl aktiver Turnierspieler für eine konkrete Kalenderwoche ist in Abbild
 <figcaption>Abb. 3: Anzahl Turnierspieler/innen U19 je Landesverband.</figcaption>
 </figure>
 
+Interessant ist auch die Fragestellung, inwiefern die grössten BLVs aus Abbildung 3 auch diejenigen mit den leistungsstärksten Spieler/innen sind (oder auch nicht). Dazu sind in den Abbildungen 4 und 5 die Anzahl Turnierspieler je BLV dargestellt, die sich unter den besten 50 bzw. 100 Ranglistenplätzen in einer bestimmten Kalenderwoche befinden (gerechnet über alle Disziplinen hinweg).
+
+<p />
+
+
+<figure>
+<img src="nr-of-players-per-blv_2023-kw46_in-top100.png" alt="Alternativer Text" class="standard-picture" />
+<figcaption>Abb. 4: Anzahl TOP 100 Turnierspieler/innen U19 je Landesverband.</figcaption>
+</figure>
+
+<figure>
+<img src="nr-of-players-per-blv_2023-kw46_in-top50.png" alt="Alternativer Text" class="standard-picture" />
+<figcaption>Abb. 5: Anzahl TOP 50 Turnierspieler/innen U19 je Landesverband.</figcaption>
+</figure>
+
+
+Der Vergleich von Abb. 3 mit Abb. 4 bzw. Abb. 5 zeigt in der Tat die oben vermutete Korrelation, erkennbar in den 5 grössten BLVs, die auch die meisten Spieler/innen in den TOP 50 bzw. TOP 100 haben.
 
 <hr />
+<em>
 <strong>Zum RAIN-Projekt (<span style="text-decoration: underline;">ra</span>nking <span style="text-decoration: underline;">in</span>sights):</strong>
 <p />
-Mit einer Eigenentwicklung in Python werden alle DBV Ranglistentabellen seit 1.1.2020, also dem Bestehen des Jugendwettkampfsystems (JWS) in eine SQLite3-Datenbank importiert. Die Datensätze enthalten Spielerinformationen, deren Vereine/Bezirke/BLVs/Gruppen, und sind nach Disziplinen getrennt. Mittels Python Scripts werden daraus Statistiken aus der DB erzeugt und visualisiert.
+Mit einer Eigenentwicklung in Python werden alle DBV Ranglistentabellen seit 1.1.2020, also dem Bestehen des Jugendwettkampfsystems (JWS) in eine SQLite3-Datenbank importiert. Die Datensätze enthalten Spielerinformationen, deren Vereine/Bezirke/BLVs/Gruppen, und sind nach Disziplinen getrennt. Mittels Python Scripts werden daraus Statistiken aus der DB erzeugt und mit <a href="https://matplotlib.org/">Matplotlib</a> visualisiert.
 <p />
 Geplant sind weitere Auswertungen, z.B. Anzahl aktiver Spieler/BLV im Zeitverlauf. Später auch Import von Turnierergebnissen und Aussagen über die Güte der RL-Tabelle (direkter Vergleich 2 Gegner, Qualität der Setzlisten etc.)
 <p />
-&copy; Edi Klein, 5. Dezember 2023 (jugendwart@bwbv.de) 
-
+&copy; Edi Klein, 20. Dezember 2023 (jugendwart@bwbv.de) 
+</em>
   </body>
 </html>
